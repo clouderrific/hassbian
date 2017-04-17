@@ -10,15 +10,15 @@ nestdown:
     - binary_sensor.downstairs_thermostat_has_leaf
     - binary_sensor.downstairs_thermostat_is_locked
     - binary_sensor.downstairs_thermostat_is_using_emergency_heat
-  nestup:
-    name: Nest (Up)
-    entities:
-      - binary_sensor.upstairs_thermostat_online
-      - sensor.upstairs_thermostat_humidity
-      - sensor.upstairs_thermostat_operation_mode
-      - sensor.upstairs_thermostat_target
-      - sensor.upstairs_thermostat_temperature
-      - binary_sensor.upstairs_thermostat_fan
-      - binary_sensor.upstairs_thermostat_has_leaf
-      - binary_sensor.upstairs_thermostat_is_locked
-      - binary_sensor.upstairs_thermostat_is_using_emergency_heat
+nestup:
+  name: Nest (Up)
+  entities:
+    - binary_sensor.upstairs_thermostat_online
+    - sensor.upstairs_thermostat_humidity
+    - sensor.upstairs_thermostat_operation_mode
+    - sensor.upstairs_thermostat_target
+    - sensor.upstairs_thermostat_temperature
+    - binary_sensor.upstairs_thermostat_fan
+    - binary_sensor.upstairs_thermostat_has_leaf
+    - binary_sensor.upstairs_thermostat_is_locked
+    - binary_sensor.upstairs_thermostat_is_using_emergency_heat

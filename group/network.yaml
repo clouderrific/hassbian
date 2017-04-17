@@ -1,4 +1,4 @@
-Network:
+network:
   entities:
     - sensor.ha_installed_version
     - sensor.ha_uptime

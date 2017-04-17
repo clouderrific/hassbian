@@ -25,6 +25,8 @@ http:
 
 # Enables the frontend
 frontend:
+# Setup grouping
+group: !include_dir_merge_list group
 # Checks for available updates
 updater:
 # Discover some devices automatically
@@ -108,5 +110,4 @@ envisalink:
     1:
       name: 'State'
 
-group: !include_dir_merge_list group
 sensor: !include_dir_merge_list sensor
