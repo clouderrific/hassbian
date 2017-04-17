@@ -55,7 +55,7 @@ zwave:
   usb_path: /dev/ttyACM0
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
   # Homeseer dimmer quirk that needs custom refresh value delay
-  customize:
+  device_config:
     light.homeseer_hswd100_wall_dimmer_level_3_0:
       refresh_value: true
       delay: 2
