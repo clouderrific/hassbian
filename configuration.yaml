@@ -52,7 +52,7 @@ recorder: !include recorder.yaml
 
 # Openzwave configuration
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyACM1
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
   # Homeseer dimmer quirk that needs custom refresh value delay
   device_config:
@@ -90,7 +90,10 @@ conversation:
 
 # Text to speech
 tts:
-  platform: google
+  - platform: amazon_polly
+    aws_access_key_id: !secret aws_polly_access_key_ID
+    aws_secret_access_key: !secret aws_polly_secret_access_key
+    region_name: 'us-east-1'
 
 # Alarm Panel Binary Sensor
 envisalink:
@@ -124,3 +127,5 @@ envisalink:
       name: 'State'
 
 sensor: !include_dir_merge_list sensor
+automation: !include_dir_merge_list automation
+scene: !include_dir_merge_list scene

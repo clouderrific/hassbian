@@ -1,48 +1,57 @@
+# Hidden Devices
+sensor.since_last_boot:
+  hidden: true
+# Renamed Devices
+sensor.prodplex1l:
+  friendly_name: 'Plex Watchers'
 sensor.state_keypad:
-  friendly_name: Keypad
+  friendly_name: 'Keypad'
+binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_11_0:
+  friendly_name: 'Gate'
+  icon: mdi:crop-square
 sensor.downstairs_thermostat_humidity:
-  friendly_name: Humidity
+  friendly_name: 'Humidity'
 sensor.downstairs_thermostat_operation_mode:
-  friendly_name: Operation Mode
+  friendly_name: 'Operation Mode'
 sensor.downstairs_thermostat_target:
-  friendly_name: Temperature Setting
+  friendly_name: 'Temperature Setting'
 sensor.downstairs_thermostat_temperature:
-  friendly_name: Temperature
+  friendly_name: 'Temperature'
 sensor.upstairs_thermostat_humidity:
-  friendly_name: Humidity
+  friendly_name: 'Humidity'
 sensor.upstairs_thermostat_operation_mode:
-  friendly_name: Operation Mode
+  friendly_name: 'Operation Mode'
 sensor.upstairs_thermostat_target:
-  friendly_name: Temperature Setting
+  friendly_name: 'Temperature Setting'
 sensor.upstairs_thermostat_temperature:
-  friendly_name: Temperature
+  friendly_name: 'Temperature'
 binary_sensor.upstairs_thermostat_online:
-  friendly_name: Online
+  friendly_name: 'Online'
   icon: mdi:cloud
 binary_sensor.upstairs_thermostat_fan:
-  friendly_name: Fan
+  friendly_name: 'Fan'
   icon: mdi:fan
 binary_sensor.upstairs_thermostat_has_leaf:
-  friendly_name: Eco Status
+  friendly_name: 'Eco Status'
   icon: mdi:leaf
 binary_sensor.upstairs_thermostat_is_locked:
-  friendly_name: Lock Status
+  friendly_name: 'Lock Status'
   icon: mdi:lock
 binary_sensor.upstairs_thermostat_is_using_emergency_heat:
-  friendly_name: Emergency Heat
+  friendly_name: 'Emergency Heat'
   icon: mdi:fire
 binary_sensor.downstairs_thermostat_online:
-  friendly_name: Online
+  friendly_name: 'Online'
   icon: mdi:cloud
 binary_sensor.downstairs_thermostat_fan:
-  friendly_name: Fan
+  friendly_name: 'Fan'
   icon: mdi:fan
 binary_sensor.downstairs_thermostat_has_leaf:
-  friendly_name: Eco Status
+  friendly_name: 'Eco Status'
   icon: mdi:leaf
 binary_sensor.downstairs_thermostat_is_locked:
-  friendly_name: Lock Status
+  friendly_name: 'Lock Status'
   icon: mdi:lock
 binary_sensor.downstairs_thermostat_is_using_emergency_heat:
-  friendly_name: Emergency Heat
+  friendly_name: 'Emergency Heat'
   icon: mdi:fire

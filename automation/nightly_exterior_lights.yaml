@@ -1,0 +1,37 @@
+# Triggers exterior lights on via sun & controlled by a scene
+- alias: 'Night - Exterior Lights On'
+  trigger:
+    - platform: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+      from: 'above_horizon'
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+
+  action:
+    - service: scene.turn_on
+      entity_id: scene.exterior_lights_on
+      
+# Triggers exterior lights off via sun & controlled by a scene
+- alias: 'Night - Exterior Lights Off'
+  trigger:
+    - platform: state
+      entity_id: sun.sun
+      state: 'above_horizon'
+      from: 'below_horizon'
+
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: sun.sun
+        state: 'above_horizon'
+
+  action:
+    - service: scene.turn_on
+      entity_id: scene.exterior_lights_off
