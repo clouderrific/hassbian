@@ -26,7 +26,7 @@ http:
 # Enables the frontend
 frontend:
 # Setup grouping
-group: !include_dir_merge_list group
+group: !include_dir_merge_named group
 # Checks for available updates
 updater:
 # Discover some devices automatically
