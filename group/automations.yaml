@@ -1,0 +1,6 @@
+downstairs:
+  name: 'Automations'
+  view: yes
+  entities:
+    - group.automation
+    - group.scene
