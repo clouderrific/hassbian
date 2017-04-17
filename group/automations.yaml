@@ -2,5 +2,11 @@ downstairs:
   name: 'Automations'
   view: yes
   entities:
-    - group.automation
-    - group.scene
+    - group.all_automation
+    - group.scenes
+    
+scenes:
+  name: 'Scenes'
+  entities:
+    - scene.exterior_lights_on
+    - scene.exterior_lights_off
