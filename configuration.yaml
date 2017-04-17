@@ -108,5 +108,5 @@ envisalink:
     1:
       name: 'State'
 
-group: !include groups.yaml
+group: !include_dir_merge_list group
 sensor: !include_dir_merge_list sensor

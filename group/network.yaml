@@ -1,0 +1,8 @@
+Network:
+  entities:
+    - sensor.ha_installed_version
+    - sensor.ha_uptime
+    - sensor.since_last_boot_templated
+    - sensor.disk_use_
+    - sensor.speedtest_download
+    - sensor.speedtest_upload

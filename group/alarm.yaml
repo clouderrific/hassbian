@@ -1,0 +1,11 @@
+alarm:
+    name: Alarm System
+    entities:
+      - alarm_control_panel.state
+      - sensor.state_keypad
+      - binary_sensor.front__garage
+      - binary_sensor.guest
+      - binary_sensor.master
+      - binary_sensor.patio_door
+      - binary_sensor.study__dining
+      - binary_sensor.upstairs
