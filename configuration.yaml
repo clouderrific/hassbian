@@ -53,6 +53,7 @@ recorder: !include recorder.yaml
 # Openzwave configuration
 zwave:
   usb_path: /dev/ttyACM0
+  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
   # Homeseer dimmer quirk that needs custom refresh value delay
   customize:
     light.homeseer_hswd100_wall_dimmer_level_3_0:
