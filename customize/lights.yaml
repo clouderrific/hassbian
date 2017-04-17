@@ -1,0 +1,20 @@
+switch.homeseer_hsws100_wall_switch_switch_2_0:
+  friendly_name: 'Front Door'
+  icon: mdi:lightbulb
+
+switch.homeseer_hsws100_wall_switch_switch_8_0:
+  friendly_name: 'Mud Room'
+  icon: mdi:lightbulb
+
+switch.homeseer_hsws100_wall_switch_switch_9_0:
+  friendly_name: 'Front Porch'
+  icon: mdi:lightbulb
+
+light.homeseer_hswd100_wall_dimmer_level_3_0:
+  friendly_name: 'Dinning Room'
+
+light.homeseer_hswd100_wall_dimmer_level_4_0:
+  friendly_name: 'Media Room'
+
+light.homeseer_hswd100_wall_dimmer_level_5_0:
+  friendly_name: 'Master Bedroom'
