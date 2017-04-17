@@ -1,4 +1,4 @@
-alarm:
+Alarm:
   name: Alarm System
   entities:
     - alarm_control_panel.state

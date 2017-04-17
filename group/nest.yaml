@@ -1,4 +1,4 @@
-nestdown:
+Nestdown:
   name: Nest (Down)
   entities:
     - binary_sensor.downstairs_thermostat_online
@@ -10,7 +10,7 @@ nestdown:
     - binary_sensor.downstairs_thermostat_has_leaf
     - binary_sensor.downstairs_thermostat_is_locked
     - binary_sensor.downstairs_thermostat_is_using_emergency_heat
-nestup:
+Nestup:
   name: Nest (Up)
   entities:
     - binary_sensor.upstairs_thermostat_online
