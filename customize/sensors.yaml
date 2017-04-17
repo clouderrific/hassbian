@@ -1,3 +1,9 @@
+# Hidden Devices
+sensor.since_last_boot:
+  hidden: true
+# Renamed Devices
+sensor.prodplex1l:
+  friendly_name: 'Plex Watchers'
 sensor.state_keypad:
   friendly_name: Keypad
 sensor.downstairs_thermostat_humidity:
