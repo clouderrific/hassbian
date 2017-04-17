@@ -1,58 +1,102 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: Home
-  # Location required to calculate the time the sun rises and sets
-  latitude: 33.1499
-  longitude: -96.8556
-  # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 186
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
   # metric for Metric, imperial for Imperial
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Chicago
 
-recorder:
-  purge_days: 30
-
-zwave:
-  usb_path: /dev/ttyACM0
+# Web UI configuration
+http:
+  api_password: !secret http_api_password
+  cors_allowed_origins:
+    - http://localhost:3000
+  trusted_networks:
+    - 10.5.1.0/24
+  ip_ban_enabled: True
+  login_attempts_threshold: 3
 
 # Enables the frontend
 frontend:
-
-# Enables configuration UI
-config:
-
-http:
-  # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
-  # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
-
 # Checks for available updates
 updater:
-
 # Discover some devices automatically
 discovery:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
-
-# Enables support for tracking state changes over time.
+# Track the sun
+sun:
+# History Configuration
 history:
-
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
+      - light
 # View all events in a logbook
 logbook:
 
-# Track the sun
-sun:
+###### Start Instance Configuration ######
 
-# Weather Prediction
-sensor:
-  platform: yr
+# Recorder
+recorder: !include recorder.yaml
+
+# Openzwave configuration
+zwave:
+  usb_path: /dev/ttyACM0
+
+# Nest configuration  
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+
+# Default climate to nest
+climate:
+  platform: nest
+
+# Media Player Configuration
+media_player:
+  - platform: plex
+  - platform: roku
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
 
 # Text to speech
 tts:
   platform: google
 
+# Alarm Panel Binary Sensor
+envisalink:
+  host: !secret envisalink_host
+  panel_type: DSC
+  user_name: !secret envisalink_user
+  password: !secret envisalink_pwd
+  code: !secret envisalink_code
+  evl_version: 4
+  zones:
+    1:
+      name: 'Front + Garage'
+      type: 'opening'
+    2:
+      name: 'Patio Door'
+      type: 'opening'
+    3:
+      name: 'Study + Dining'
+      type: 'opening'
+    4:
+      name: 'Master'
+      type: 'opening'
+    5:
+      name: 'Guest'
+      type: 'opening'
+    6:
+      name: 'Upstairs'
+      type: 'opening'
+  partitions:
+    1:
+      name: 'State'
+
 group: !include groups.yaml
+sensor: !include_dir_merge_list sensor
