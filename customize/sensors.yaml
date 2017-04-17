@@ -8,6 +8,7 @@ sensor.state_keypad:
   friendly_name: 'Keypad'
 binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_11_0:
   friendly_name: 'Gate'
+  icon: mdi:crop-square
 sensor.downstairs_thermostat_humidity:
   friendly_name: 'Humidity'
 sensor.downstairs_thermostat_operation_mode:
