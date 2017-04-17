@@ -58,13 +58,13 @@ zwave:
   device_config:
     light.homeseer_hswd100_wall_dimmer_level_3_0:
       refresh_value: true
-      delay: 2
+      delay: 5
     light.homeseer_hswd100_wall_dimmer_level_4_0:
       refresh_value: true
-      delay: 2
+      delay: 5
     light.homeseer_hswd100_wall_dimmer_level_5_0:
       refresh_value: true
-      delay: 2
+      delay: 5
 
 # Nest configuration  
 nest:
