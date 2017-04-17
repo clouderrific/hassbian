@@ -53,6 +53,17 @@ recorder: !include recorder.yaml
 # Openzwave configuration
 zwave:
   usb_path: /dev/ttyACM0
+  # Homeseer dimmer quirk that needs custom refresh value delay
+  customize:
+    light.homeseer_hswd100_wall_dimmer_level_3_0:
+      refresh_value: true
+      delay: 2
+    light.homeseer_hswd100_wall_dimmer_level_4_0:
+      refresh_value: true
+      delay: 2
+    light.homeseer_hswd100_wall_dimmer_level_5_0:
+      refresh_value: true
+      delay: 2
 
 # Nest configuration  
 nest:
