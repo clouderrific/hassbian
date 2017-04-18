@@ -3,8 +3,8 @@
   trigger:
     - platform: state
       entity_id: sensor.aeotec_zw100_multisensor_6_burglar_12_10
-      state: '0'
-      from: '8'
+      state: '8'
+      from: '0'
   condition:
     - condition: numeric_state
       entity_id: sensor.aeotec_zw100_multisensor_6_luminance_12_3
@@ -18,8 +18,8 @@
   trigger:
     - platform: state
       entity_id: sensor.aeotec_zw100_multisensor_6_burglar_12_10
-      state: '8'
-      from: '0'
+      state: '0'
+      from: '8'
   condition:
     - condition: state
       entity_id: switch.homeseer_hsws100_wall_switch_switch_8_0
