@@ -6,9 +6,9 @@
       state: '0'
       from: '8'
   condition:
-    condition: state
-    entity_id: sensor.aeotec_multisensor_6_luminance
-    below: '50'
+    - condition: state
+      entity_id: sensor.aeotec_multisensor_6_luminance
+      below: '50'
   action:
     - service: switch.turn_on
       entity_id: switch.homeseer_hsws100_wall_switch_switch_8_0
@@ -21,9 +21,9 @@
       state: '8'
       from: '0'
   condition:
-    condition: state
-    entity_id: sensor.aeotec_multisensor_6_luminance
-    state: 'on'
+    - condition: state
+      entity_id: sensor.aeotec_multisensor_6_luminance
+      state: 'on'
   action:
     - service: switch.turn_off
       entity_id: switch.homeseer_hsws100_wall_switch_switch_8_0
