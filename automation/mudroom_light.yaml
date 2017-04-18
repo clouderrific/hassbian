@@ -8,7 +8,7 @@
   condition:
     - condition: numeric_state
       entity_id: sensor.aeotec_zw100_multisensor_6_luminance_12_3
-      below: '50'
+      below: '22'
   action:
     - service: switch.turn_on
       entity_id: switch.homeseer_hsws100_wall_switch_switch_8_0
