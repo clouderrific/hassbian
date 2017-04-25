@@ -9,6 +9,10 @@ sensor.state_keypad:
 binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_11_0:
   friendly_name: 'Gate'
   icon: mdi:crop-square
+sensor.downstairs_away_mode:
+  friendly_name: 'Away Mode'
+sensor.downstairs_thermostat_hvac_state:
+  friendly_name: 'AC Running'
 sensor.downstairs_thermostat_humidity:
   friendly_name: 'Humidity'
 sensor.downstairs_thermostat_operation_mode:
@@ -17,6 +21,10 @@ sensor.downstairs_thermostat_target:
   friendly_name: 'Temperature Setting'
 sensor.downstairs_thermostat_temperature:
   friendly_name: 'Temperature'
+sensor.upstairs_away_mode:
+  friendly_name: 'Away Mode'
+sensor.upstairs_thermostat_hvac_state:
+  friendly_name: 'AC Running'
 sensor.upstairs_thermostat_humidity:
   friendly_name: 'Humidity'
 sensor.upstairs_thermostat_operation_mode:
