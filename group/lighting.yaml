@@ -14,6 +14,6 @@ lighting:
     # Master Bedroom
     - light.homeseer_hswd100_wall_dimmer_level_3
     # Master Ceiling Fan
-    - zwave.ge_12730_fan_control_switch
+    - fan.ge_12730_fan_control_switch_level
 
     
