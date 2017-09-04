@@ -2,18 +2,18 @@ lighting:
   name: Lighting
   entities:
     # Dinning Room
-    - light.homeseer_hswd100_wall_dimmer_level_3_0
+    - light.homeseer_hswd100_wall_dimmer_level
     # Front Door
-    - switch.homeseer_hsws100_wall_switch_switch_2_0
+    - switch.homeseer_hsws100_wall_switch_switch
     # Front Porch
-    - switch.homeseer_hsws100_wall_switch_switch_9_0
+    - switch.homeseer_hsws100_wall_switch_switch_3
     # Mud Room
-    - switch.homeseer_hsws100_wall_switch_switch_8_0
+    - switch.homeseer_hsws100_wall_switch_switch_2
     # Media Room
-    - light.homeseer_hswd100_wall_dimmer_level_4_0
+    - light.homeseer_hswd100_wall_dimmer_level_2
     # Master Bedroom
-    - light.homeseer_hswd100_wall_dimmer_level_5_0
+    - light.homeseer_hswd100_wall_dimmer_level_3
     # Master Ceiling Fan
-    - light.ge_12730_fan_control_switch_level_6_0
+    - zwave.ge_12730_fan_control_switch
 
     

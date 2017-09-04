@@ -1,8 +1,8 @@
 - name: exterior_lights_on
   entities:
-       switch.homeseer_hsws100_wall_switch_switch_9_0: on
+       switch.homeseer_hsws100_wall_switch_switch_3: on
 
 - name: exterior_lights_off
   entities:
-       switch.homeseer_hsws100_wall_switch_switch_9_0: off           
+       switch.homeseer_hsws100_wall_switch_switch_3: off           
         
