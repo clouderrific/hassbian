@@ -3,7 +3,7 @@
   trigger:
     - platform: state
       entity_id: sun.sun
-      initial_state: 'below_horizon'
+      to: 'below_horizon'
       from: 'above_horizon'
 
   condition:
@@ -22,7 +22,7 @@
   trigger:
     - platform: state
       entity_id: sun.sun
-      initial_state: 'above_horizon'
+      to: 'above_horizon'
       from: 'below_horizon'
 
   condition:
@@ -30,7 +30,7 @@
     conditions:
       - condition: state
         entity_id: sun.sun
-        initial_state: 'above_horizon'
+        state: 'above_horizon'
 
   action:
     - service: scene.turn_on
