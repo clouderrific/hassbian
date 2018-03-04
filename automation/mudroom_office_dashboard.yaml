@@ -1,0 +1,29 @@
+# Triggers mud room light to turn on with motion
+- alias: 'Office Dashbaord - Turn on'
+  trigger:
+    - platform: state
+      entity_id: sensor.aeotec_zw100_multisensor_6_burglar_2
+      to: '8'
+      from: '0'
+  condition:
+    condition: state
+    entity_id: switch.leviton_unknown_type1d04_id0334_switch
+    state: 'off'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.leviton_unknown_type1d04_id0334_switch
+
+# Triggers mud room light to turn off with no motion
+- alias: 'Office Dashboard- Turn off'
+  trigger:
+    - platform: state
+      entity_id: sensor.aeotec_zw100_multisensor_6_burglar_2
+      to: '0'
+      from: '8'
+  condition:
+    condition: state
+    entity_id: switch.leviton_unknown_type1d04_id0334_switch
+    state: 'on'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.leviton_unknown_type1d04_id0334_switch

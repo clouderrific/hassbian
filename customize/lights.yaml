@@ -18,3 +18,6 @@ light.homeseer_hswd100_wall_dimmer_level_2:
 
 light.homeseer_hswd100_wall_dimmer_level_3:
   friendly_name: 'Master Bedroom'
+
+switch.leviton_unknown_type1d04_id0334_switch:
+  friendly_name: 'Office Dashboard'
