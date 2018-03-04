@@ -15,5 +15,11 @@ lighting:
     - light.homeseer_hswd100_wall_dimmer_level_3
     # Master Ceiling Fan
     - fan.ge_12730_fan_control_switch_level
+    # Office Light
+    - switch.homeseer_hsws100_wall_switch_switch_4
+    # Office Fan
+    - fan.ge_12730_fan_control_switch_level_2
+    # Office Dashboard
+    - switch.leviton_unknown_type1d04_id0334_switch
 
     
