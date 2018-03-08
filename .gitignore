@@ -15,6 +15,7 @@ zwscene.xml
 *.crt
 *.key
 *.conf
+!plex.conf
 www
 OZW_Log.txt
 home-assistant.log
