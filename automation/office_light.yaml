@@ -1,5 +1,5 @@
-# Triggers mud room light to turn on with motion
-- alias: 'Mud Room - Turn on light on motion'
+# Triggers office light to turn on with motion
+- alias: 'Office - Turn on light on motion'
   trigger:
     - platform: state
       entity_id: sensor.aeotec_zw100_multisensor_6_burglar_2
@@ -13,8 +13,8 @@
     - service: switch.turn_on
       entity_id: switch.homeseer_hsws100_wall_switch_switch_4
 
-# Triggers mud room light to turn off with no motion
-- alias: 'Mud Room - Turn off light on motion'
+# Triggers officelight to turn off with no motion
+- alias: 'Office - Turn off light on motion'
   trigger:
     - platform: state
       entity_id: sensor.aeotec_zw100_multisensor_6_burglar_2
